@@ -46,7 +46,7 @@ test("Update A User", async({request})=>{
         gender: 'female',
         status: 'inactive'
     }
-    let response = await request.put("https://gorest.co.in/public/v2/users/8718734", {headers: AUTH_TOKEN, data: userData})
+    let response = await request.put("https://gorest.co.in/public/v2/users/8717590", {headers: AUTH_TOKEN, data: userData})
     let jsonResponse = await response.json()
     console.log(jsonResponse)
     console.log("Response code: " + response.status())
@@ -56,7 +56,7 @@ test("Update A User", async({request})=>{
 })
 
 test("Delete A User", async({request})=>{
-    let response = await request.delete("https://gorest.co.in/public/v2/users/8718739", {headers: AUTH_TOKEN})
+    let response = await request.delete("https://gorest.co.in/public/v2/users/8717590", {headers: AUTH_TOKEN})
     // let jsonResponse = await response.json()
     // console.log(jsonResponse)
     console.log("Response code: " + response.status())
